@@ -6,18 +6,14 @@
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML/CSS, Javascript
+- Git/Github, CLI
 
-## Live Demo (if available)
+## Live Demo
 
 [Live Demo Link](https://ismailco.github.io/Awesome-books_JavaScript-objects/)
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
 
 To get a local copy up and running follow these simple example steps.
 
@@ -25,21 +21,31 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
+To get the project up and running you need a browser.
+[The project live link](Live-Demo-Link)
+
 ### Install
+
+To get the project locally, run `git clone git@github.com:Ismailco/Awesome-books_JavaScript-objects.git`
 
 ### Usage
 
+This project helps you store your favorite books right in your navigator.
+
 ### Run tests
 
-### Deployment
+For:
+- Eslint: run `npx eslint .`
+- Eslint: run `npx hint .`
+- Stylelint: run `npx stylelint "**/*.{css.scss}"`
 
 ## Authors
 
 👤 **Ismail Courr**
 
-- GitHub: [@githubhandle](https://github.com/ismailco)
-- Twitter: [@twitterhandle](https://twitter.com/ismailcourr)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/ismailcourr)
+- GitHub: [@ismailco](https://github.com/ismailco)
+- Twitter: [@ismailcourr](https://twitter.com/ismailcourr)
+- LinkedIn: [Ismail Courr](https://linkedin.com/in/ismailcourr)
 
 👤 **Jonathan Sivahera**
 
@@ -56,12 +62,6 @@ Feel free to check the [issues page](../../issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
