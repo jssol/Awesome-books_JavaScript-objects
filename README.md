@@ -1,6 +1,6 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Awesome-books_JavaScript-objects
+
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
 > In this project, we build a basic website that allows users to add/remove books from a list, using JavaScript objects and arrays. and dynamically modify the DOM and add basic events.
 
@@ -35,17 +35,17 @@ To get a local copy up and running follow these simple example steps.
 
 ## Authors
 
-👤 **Author1**
+👤 **Ismail Courr**
 
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author2**
+👤 **Jonathan Sivahera**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@jssol](https://github.com/jssol)
+- Twitter: [@jsivahera](https://twitter.com/jsivahera)
+- LinkedIn: [Jonathan Sivahera](https://linkedin.com/in/jsivahera)
 
 ## 🤝 Contributing
 
