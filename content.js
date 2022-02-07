@@ -64,10 +64,10 @@ const addBook = (title, author) => {
 };
 
 addBtn.addEventListener('click', () => {
-  if((titleInput.value && authorInput.value)) {
+  if ((titleInput.value && authorInput.value)) {
     addBook(titleInput.value, authorInput.value);
     titleInput.value = '';
-    authorInput.value = '';;
+    authorInput.value = '';
   }
 });
 
@@ -75,8 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (localStorage.getItem('bookStore')) {
     books = JSON.parse(localStorage.getItem('bookStore'));
     displayBooks();
-  }
-  else if(books) {
+  } else if (books) {
     displayBooks();
   }
 });
