@@ -1,8 +1,8 @@
 const bookList = document.querySelector('.book_list');
 const addBtn = document.querySelector('.add_book_btn');
 
-const titleInput = document.querySelector('.title').value;
-const authorInput = document.querySelector('.author').value;
+const titleInput = document.querySelector('.title');
+const authorInput = document.querySelector('.author');
 
 const books = [
   {
@@ -58,8 +58,7 @@ const displayBooks = () => {
 };
 
 addBtn.addEventListener('click', () => {
-  addBook(titleInput, authorInput);
-  console.log(titleInput);
+  addBook(titleInput.value, authorInput.value);
 });
 
 document.addEventListener('DOMContentLoaded', displayBooks);
