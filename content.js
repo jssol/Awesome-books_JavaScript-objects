@@ -44,7 +44,7 @@ const displayBooks = () => {
 };
 
 const setLocalStore = (books) => {
-  const bookStore = localStorage.setItem('bookStore', JSON.stringify(books));
+  localStorage.setItem('bookStore', JSON.stringify(books));
 };
 
 const addBook = (title, author) => {
@@ -70,7 +70,7 @@ addBtn.addEventListener('click', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  if(localStorage.getItem('bookStore')) {
+  if (localStorage.getItem('bookStore')) {
     books = JSON.parse(localStorage.getItem('bookStore'));
     displayBooks();
   }
