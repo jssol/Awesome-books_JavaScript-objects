@@ -15,6 +15,10 @@ let books = [
   },
 ];
 
+const setLocalStore = (books) => {
+  localStorage.setItem('bookStore', JSON.stringify(books));
+};
+
 const removeBook = (index) => {
   books.splice(index, 1);
   setLocalStore(books);
@@ -47,10 +51,6 @@ const displayBooks = () => {
       displayBooks();
     });
   });
-};
-
-const setLocalStore = (books) => {
-  localStorage.setItem('bookStore', JSON.stringify(books));
 };
 
 const addBook = (title, author) => {
