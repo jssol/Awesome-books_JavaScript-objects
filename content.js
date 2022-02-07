@@ -76,4 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     books = JSON.parse(localStorage.getItem('bookStore'));
     displayBooks();
   }
+  else if(books) {
+    displayBooks();
+  }
 });
