@@ -12,7 +12,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://ismailco.github.io/Awesome-books_JavaScript-objects/)
 
 ## Getting Started
 
@@ -37,9 +37,9 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Ismail Courr**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/ismailco)
+- Twitter: [@twitterhandle](https://twitter.com/ismailcourr)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/ismailcourr)
 
 👤 **Jonathan Sivahera**
 
