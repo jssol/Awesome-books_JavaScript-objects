@@ -64,9 +64,11 @@ const addBook = (title, author) => {
 };
 
 addBtn.addEventListener('click', () => {
-  addBook(titleInput.value, authorInput.value);
-  titleInput.value = '';
-  authorInput.value = '';
+  if((titleInput.value && authorInput.value)) {
+    addBook(titleInput.value, authorInput.value);
+    titleInput.value = '';
+    authorInput.value = '';;
+  }
 });
 
 document.addEventListener('DOMContentLoaded', () => {
