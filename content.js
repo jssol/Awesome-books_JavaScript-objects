@@ -15,6 +15,11 @@ let books = [
   },
 ];
 
+const removeBook = (index) => {
+  books.splice(index, 1);
+  setLocalStore(books);
+};
+
 const displayBooks = () => {
   bookList.innerHTML = '';
   books.forEach((book, index) => {
@@ -39,6 +44,7 @@ const displayBooks = () => {
 
     button.addEventListener('click', () => {
       removeBook(index);
+      displayBooks();
     });
   });
 };
@@ -53,12 +59,6 @@ const addBook = (title, author) => {
     title,
   };
   books.push(book);
-  displayBooks();
-  setLocalStore(books);
-};
-
-const removeBook = (index) => {
-  books.splice(index, 1);
   displayBooks();
   setLocalStore(books);
 };
