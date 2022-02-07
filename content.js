@@ -1,4 +1,8 @@
 const bookList = document.querySelector('.book_list');
+const addBtn = document.querySelector('.add_book_btn');
+
+const titleInput = document.querySelector('.title').value;
+const authorInput = document.querySelector('.author').value;
 
 const books = [
   {
@@ -10,30 +14,6 @@ const books = [
     title: 'Testeroo',
   },
 ];
-
-const displayBooks = () => {
-	bookList.innerHTML = '';
-  books.forEach((book) => {
- 	const li = document.createElement('li');
-	const article = document.createElement('article');
-	const title = document.createElement('p');
-	const author = document.createElement('p');
-	const button = document.createElement('button');
-	
-	
-	title.className = "book_title";
-	title.textContent = book.title;
-	author.className = "book_author";
-	author.textContent = book.author;
-	button.className = "remove_book_btn";
-	button.textContent = "Remove";
-	article.append(title, author, button);
-	li.className = "book";
-	li.appendChild(article);
-	
-  bookList.appendChild(li);
-  });
-};
 
 const addBook = (title, author) => {
   const book = {
@@ -49,11 +29,37 @@ const removeBook = (index) => {
   displayBooks();
 };
 
-document.addEventListener('load', displayBooks);
+const displayBooks = () => {
+  bookList.innerHTML = '';
+  books.forEach((book, index) => {
+    const li = document.createElement('li');
+    const article = document.createElement('article');
+    const title = document.createElement('p');
+    const author = document.createElement('p');
+    const button = document.createElement('button');
 
-const removeBtn = document.querySelectorAll('.remove_book_btn');
-removeBtn.forEach((btn, index) => {
-   btn.addEventListener('click', (event) => {
-     removeBook(index);
-   });
+    title.className = 'book_title';
+    title.textContent = book.title;
+    author.className = 'book_author';
+    author.textContent = book.author;
+    button.className = 'remove_book_btn';
+    button.textContent = 'Remove';
+
+    article.append(title, author, button);
+    li.className = 'book';
+    li.appendChild(article);
+
+    bookList.appendChild(li);
+
+    button.addEventListener('click', () => {
+      removeBook(index);
+    });
+  });
+};
+
+addBtn.addEventListener('click', () => {
+  addBook(titleInput, authorInput);
+  console.log(titleInput);
 });
+
+document.addEventListener('DOMContentLoaded', displayBooks);
