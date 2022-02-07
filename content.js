@@ -4,7 +4,7 @@ const addBtn = document.querySelector('.add_book_btn');
 const titleInput = document.querySelector('.title');
 const authorInput = document.querySelector('.author');
 
-const books = [
+let books = [
   {
     author: 'ipsum',
     title: 'Testyy',
@@ -14,20 +14,6 @@ const books = [
     title: 'Testeroo',
   },
 ];
-
-const addBook = (title, author) => {
-  const book = {
-    author: author,
-    title: title,
-  };
-  books.push(book);
-  displayBooks();
-};
-
-const removeBook = (index) => {
-  books.splice(index, 1);
-  displayBooks();
-};
 
 const displayBooks = () => {
   bookList.innerHTML = '';
@@ -57,8 +43,35 @@ const displayBooks = () => {
   });
 };
 
+const setLocalStore = (books) => {
+  const bookStore = localStorage.setItem('bookStore', JSON.stringify(books));
+};
+
+const addBook = (title, author) => {
+  const book = {
+    author,
+    title,
+  };
+  books.push(book);
+  displayBooks();
+  setLocalStore(books);
+};
+
+const removeBook = (index) => {
+  books.splice(index, 1);
+  displayBooks();
+  setLocalStore(books);
+};
+
 addBtn.addEventListener('click', () => {
   addBook(titleInput.value, authorInput.value);
+  titleInput.value = '';
+  authorInput.value = '';
 });
 
-document.addEventListener('DOMContentLoaded', displayBooks);
+document.addEventListener('DOMContentLoaded', () => {
+  if(localStorage.getItem('bookStore')) {
+    books = JSON.parse(localStorage.getItem('bookStore'));
+    displayBooks();
+  }
+});
