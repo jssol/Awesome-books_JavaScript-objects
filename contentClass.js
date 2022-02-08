@@ -57,8 +57,9 @@ class Book {
 
 const booksLib = new Book();
 
-addBtn.addEventListener('click', () => {
+addBtn.addEventListener('click', (event) => {
   if (titleInput.value && authorInput.value) {
+    event.preventDefault();
     booksLib.addBook(titleInput.value, authorInput.value);
     titleInput.value = '';
     authorInput.value = '';
