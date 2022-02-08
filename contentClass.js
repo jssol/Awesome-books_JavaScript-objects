@@ -37,7 +37,7 @@ class Book {
       const button = document.createElement('button');
 
       description.className = 'book_info';
-      description.textContent = `"${book.title}" by ${book.author}`
+      description.textContent = `"${book.title}" by ${book.author}`;
       button.className = 'remove_book_btn';
       button.textContent = 'Remove';
 

@@ -4,7 +4,6 @@
   --clr-white: #fff;
   --clr-dark: hsl(0, 10%, 80%);
   --clr-accent: rgb(172, 49, 27);
-
   --ff: 'Mali', cursive, sans-serif;
   --fw-bold: 700;
   --fw-reg: 500;
@@ -33,7 +32,7 @@ body {
   overflow: hidden;
   font-family: var(--ff);
   font-size: var(--fs-text);
-  font-weight: (--fw-reg);
+  font-weight: var(--fw-reg);
   background-color: var(--clr-white);
   color: #000;
 }
@@ -132,21 +131,21 @@ body {
   .book_list::-webkit-scrollbar {
     width: 12px;
   }
-  
+
   .book_list::-webkit-scrollbar-track {
     background-color: var(--clr-white);
   }
-  
+
   .book_list::-webkit-scrollbar-thumb {
     border: 2px solid var(--clr-white);
     border-radius: 8px;
     background-color: var(--clr-dark);
   }
-  
+
   .book_list::-webkit-scrollbar-thumb:hover {
     background-color: hsl(0, 10%, 70%);
   }
-  
+
   .book_list::-webkit-scrollbar-thumb:active {
     background-color: hsl(0, 10%, 60%);
   }
