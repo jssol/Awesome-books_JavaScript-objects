@@ -47,14 +47,14 @@ body {
 }
 
 .book_list_section::after {
-	content: '';
-	position: absolute;
-	height: 3px;
-	width: 15%;
-	background-color: #000;
-	bottom: -1em;
-	left: 50%;
-	transform: translateX(-50%);
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 15%;
+  background-color: #000;
+  bottom: -1em;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .header {
