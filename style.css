@@ -1,3 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --clr-white: #fff;
+  --clr-dark: hsl(0, 10%, 80%);
+  --clr-accent: rgb(172, 49, 27);
+
+  --ff: 'Mali', cursive, sans-serif;
+  --fw-bold: 700;
+  --fw-reg: 500;
+  --fs-title: 1.5em;
+  --fs-text: 1.25em;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: var(--ff);
+  font-size: var(--fs-text);
+  font-weight: (--fw-reg);
+  background-color: var(--clr-white);
+  color: #000;
+}
+
+.book_list_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 1em auto 0;
+}
+
+.header {
+  margin: 0.25em auto;
+  font-size: var(--fs-title);
+  font-weight: var(--fw-bold);
+}
+
 .book_list {
+  border: 3px solid #000;
+  width: 90%;
   list-style: none;
+  overflow-y: scroll;
+  max-height: 50vh;
+}
+
+.book > article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 0.75em;
+}
+
+.book:nth-of-type(2n) > article {
+  background-color: var(--clr-dark);
+}
+
+.remove_book_btn {
+  padding: 0.5em;
+  border: 1px solid #000;
+  box-shadow: 3px 3px 0 0 #000;
+  font-family: var(--ff);
+  font-weight: 600;
+}
+
+.add_book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em auto;
+  width: 100%;
+  align-self: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.add_book_form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.input {
+  padding: 0.25em;
+  width: 100%;
+  font-family: var(--ff);
+  border: 2px solid #000;
+  font-size: 1em;
+}
+
+.input + .input {
+  margin-top: 1em;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  color: #000;
+  font-family: var(--ff);
+}
+
+.add_book_btn {
+  align-self: flex-end;
+  padding: 0.5em;
+  margin-top: 1em;
+  border: 2px solid #000;
+  width: 40%;
+  font-size: 0.85em;
+  font-family: var(--ff);
+  font-weight: 600;
 }
