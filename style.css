@@ -20,6 +20,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -54,28 +58,6 @@ body {
   list-style: none;
   overflow-y: auto;
   max-height: 50vh;
-}
-
-.book_list::-webkit-scrollbar {
-  width: 14px;
-}
-
-.book_list::-webkit-scrollbar-track {
-  background-color: var(--clr-white);
-}
-
-.book_list::-webkit-scrollbar-thumb {
-  border: 2px solid var(--clr-white);
-  border-radius: 10px;
-  background-color: var(--clr-dark);
-}
-
-.book_list::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(0, 10%, 70%);
-}
-
-.book_list::-webkit-scrollbar-thumb:active {
-  background-color: hsl(0, 10%, 60%);
 }
 
 .book > article {
@@ -144,4 +126,28 @@ body {
   font-size: 0.85em;
   font-family: var(--ff);
   font-weight: 600;
+}
+
+@media only screen and (min-width: 992px) {
+  .book_list::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  .book_list::-webkit-scrollbar-track {
+    background-color: var(--clr-white);
+  }
+  
+  .book_list::-webkit-scrollbar-thumb {
+    border: 2px solid var(--clr-white);
+    border-radius: 8px;
+    background-color: var(--clr-dark);
+  }
+  
+  .book_list::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(0, 10%, 70%);
+  }
+  
+  .book_list::-webkit-scrollbar-thumb:active {
+    background-color: hsl(0, 10%, 60%);
+  }
 }
