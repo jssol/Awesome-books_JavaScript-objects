@@ -6,7 +6,24 @@ const authorInput = document.querySelector('.author');
 
 class Book {
   constructor() {
-    this.books = [];
+    this.books = [
+      {
+        author: 'Gandhi',
+        title: 'Tolerance',
+      },
+      {
+        author: 'Mandela',
+        title: 'Pardon',
+      },
+      {
+        author: 'Ismael',
+        title: 'Coding',
+      },
+      {
+        author: 'Lumumba',
+        title: 'Freedom',
+      },
+    ];
   }
 
   setLocalStore() {
