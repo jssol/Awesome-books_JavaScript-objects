@@ -41,8 +41,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   width: 100%;
   margin: 1em auto 0;
+}
+
+.book_list_section::after {
+	content: '';
+	position: absolute;
+	height: 3px;
+	width: 15%;
+	background-color: #000;
+	bottom: -1em;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .header {
@@ -120,7 +132,8 @@ body {
   align-self: flex-end;
   padding: 0.5em;
   margin-top: 1em;
-  border: 3px solid #000;
+  border: 1px solid #000;
+  box-shadow: 3px 3px 0 0 #000;
   width: 40%;
   font-size: 0.85em;
   font-family: var(--ff);
