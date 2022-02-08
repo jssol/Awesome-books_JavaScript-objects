@@ -27,6 +27,7 @@ class Book {
     this.displayBooks();
     this.setLocalStore(this.books);
   }
+
   displayBooks() {
     bookList.innerHTML = '';
     this.books.forEach((book, index) => {
