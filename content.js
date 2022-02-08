@@ -4,17 +4,20 @@ const addBtn = document.querySelector('.add_book_btn');
 const titleInput = document.querySelector('.title');
 const authorInput = document.querySelector('.author');
 
-class book {
+class Book {
   constructor() {
     this.books = [];
   }
-  setLocalStore(books) {
+
+  setLocalStore() {
     localStorage.setItem('bookStore', JSON.stringify(this.books));
   }
+
   removeBook(index) {
     this.books.splice(index, 1);
     this.setLocalStore(this.books);
   }
+
   addBook(title, author) {
     const book = {
       author,
@@ -54,7 +57,7 @@ class book {
   }
 }
 
-let booksLib = new book();
+const booksLib = new Book();
 
 // let books = [
 //   {
