@@ -120,13 +120,12 @@ body {
 }
 
 .add_book {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   margin: 1em auto;
   width: 100%;
   align-self: center;
-  display: none;
 }
 
 .add_book_form {
