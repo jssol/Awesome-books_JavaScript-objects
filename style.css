@@ -88,7 +88,7 @@ body {
   text-align: end;
   padding: 0.25em;
   position: absolute;
-  top: 4em;
+  top: 5.5em;
 }
 
 .book_list_section {
@@ -197,6 +197,10 @@ body {
   margin: 1em auto;
 }
 
+.contacts {
+	width: 90%;
+}
+
 .footer {
   width: 90%;
   display: flex;
@@ -222,6 +226,13 @@ body {
 }
 
 @media only screen and (min-width: 540px) {
+  .time-display {
+  top: 4em;
+  }
+  .contact_details,
+  .contacts {
+    width: auto;
+  }
   .book_list::-webkit-scrollbar {
     width: 12px;
   }
