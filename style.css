@@ -27,14 +27,52 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: var(--ff);
   font-size: var(--fs-text);
   font-weight: var(--fw-reg);
   background-color: var(--clr-white);
   color: #000;
+}
+
+.nav_header {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid #000;
+  padding: 1px 10px 7px 10px;
+  margin-top: 10px;
+}
+
+.nav_list {
+  display: flex;
+  list-style: none;
+}
+
+.nav_item {
+  margin-left: 15px;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: #000;
+  font-size: 19px;
+}
+
+.nav_link:hover {
+  color: rgb(137, 137, 231);
+}
+
+.nav_link:active {
+  color: rgb(114, 114, 235);
+}
+
+.logo {
+  font-size: var(--fs-title);
 }
 
 .book_list_section {
@@ -68,7 +106,7 @@ body {
   width: 90%;
   list-style: none;
   overflow-y: auto;
-  max-height: 50vh;
+  max-height: 90vh;
 }
 
 .book > article {
@@ -138,6 +176,38 @@ body {
   font-size: 0.85em;
   font-family: var(--ff);
   font-weight: 600;
+}
+
+.add_book {
+  display: none;
+}
+
+.contact_section {
+  display: none;
+}
+
+.footer {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 3px solid #000;
+  text-align: center;
+}
+
+.heart {
+  color: #ff0000;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 400px) {
+  .nav_header {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (min-width: 992px) {
