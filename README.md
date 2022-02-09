@@ -25,7 +25,7 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 To get the project up and running you need a browser.
-[The project live link](Live-Demo-Link)
+[The project live link](#Live-Demo-Link)
 
 ### Install
 
