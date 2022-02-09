@@ -4,6 +4,9 @@
 
 > In this project, we build a basic website that allows users to add/remove books from a list, using JavaScript objects and arrays. and dynamically modify the DOM and add basic events.
 
+![](img/screenshot.png)
+![](img/screenshot1.png)
+
 ## Built With
 
 - HTML/CSS, Javascript
@@ -35,6 +38,7 @@ This project helps you store your favorite books right in your navigator.
 ### Run tests
 
 For:
+
 - Eslint: run `npx eslint .`
 - Eslint: run `npx hint .`
 - Stylelint: run `npx stylelint "**/*.{css.scss}"`

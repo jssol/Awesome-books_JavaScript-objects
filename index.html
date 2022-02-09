@@ -8,8 +8,19 @@
     <title>Awesome books</title>
   </head>
   <body>
+    <header class="nav_header">
+      <h1 class="logo">Awesome Books</h1>
+      <nav class="nav_bar">
+        <ul class="nav_list">
+          <li class="nav_item list"><a href="#" class="nav_link">List</a></li>
+          <li class="nav_item add_new"><a href="#" class="nav_link">Add new</a></li>
+          <li class="nav_item contact"><a href="#" class="nav_link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p class="time-display"></p>
     <section class="book_list_section">
-      <h2 class="header">Awesome books</h2>
+      <h2 class="header">All Awesome books</h2>
       <ul class="book_list"></ul>
     </section>
     <section class="add_book">
@@ -20,7 +31,26 @@
         <button class="add_book_btn" type="submit">Add book</button>
       </form>
     </section>
+    <section class="contact_section">
+      <h2 class="header">Contact Information</h2>
+      <p class="contact_details">
+        Do you have any questions or just want to say "Hello"? <br>
+        You can reach out to us!
+      </p>
+      <ul class="contacts">
+        <li class="contact">Our email: mail@mail.com</li>
+        <li class="contact">Our phone number: XXXXXXXX</li>
+        <li class="contact">Our address: online, github, repo 300</li>
+      </ul>
+    </section>
+    <footer class="footer">
+      <p class="footer_text">
+        &copy; 2022 All rights reserved. Ismail & Jonathan. <br />
+        Created with <span class="heart">&hearts;</span>
+      </p>
+    </footer>
 
     <script src="./contentClass.js"></script>
+    <script src="spa.js"></script>
   </body>
 </html>
